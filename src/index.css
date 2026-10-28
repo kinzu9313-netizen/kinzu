@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --glow-color-primary: rgba(4, 161, 109, 0.5);
+    --glow-blur: 20px;
+    --glow-spread: 6px;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+
+  .glass-panel {
+    @apply bg-[rgba(20,20,20,0.6)] backdrop-blur-md border border-white/5;
+  }
+
+  .btn-glow {
+    @apply transition-all duration-500;
+  }
+
+  .btn-glow:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}git init
